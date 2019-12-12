@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/click_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/main_click_text"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.mrcd.custom.view.widget.KtEasyScrollView
+        android:id="@+id/kt_easy_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_marginTop="32dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="#0f0"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="第一个view"
+            android:layout_marginStart="50dp"
+            android:textColor="#f00"
+            android:background="#eeffcc"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#0ff"
+            android:gravity="center"
+            android:text="第二个view"
+            android:textColor="#00f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0"
+            android:gravity="center"
+            android:text="第三个view"
+            android:textColor="#f0f"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </com.mrcd.custom.view.widget.KtEasyScrollView>
+
+    <com.mrcd.custom.view.widget.MyFlowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#0ffff0"
+        android:paddingStart="10dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:maxLines="1"
+            android:text="这里返回了一个AppCompatDelegate对象,跟踪到AppCompatDelegate内部，阅读源码，可以得出一个结论：AppCompatDelegate 是 替Activity生成View对象的委托类，它提供了一系列setContentView方法，在Activity中加入UI控件。"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是2号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是3号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是4号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="I am five"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是666号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是777777号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是888号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是99999999999999号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是101010号"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="我是11号"
+            android:textSize="16sp" />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:text="我是12号"-->
+        <!--            android:textSize="16sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:text="我是13号"-->
+        <!--            android:textSize="16sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="16dp"-->
+        <!--            android:text="我是14号"-->
+        <!--            android:textSize="16sp" />-->
+
+    </com.mrcd.custom.view.widget.MyFlowLayout>
+
+    <view
+        class="android.widget.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00f"
+        android:text="我是view间接渲染的"
+        android:theme="@style/test_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_test_theme"
+            app:autoChange="true" />
+    </RelativeLayout>
+
+</LinearLayout>
