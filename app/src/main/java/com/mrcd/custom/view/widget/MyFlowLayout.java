@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 /**
  * 自定义流式布局
+ * 参考hongyang FlowLayout 手动撸一遍FlowLayout
  */
 public class MyFlowLayout extends ViewGroup {
 

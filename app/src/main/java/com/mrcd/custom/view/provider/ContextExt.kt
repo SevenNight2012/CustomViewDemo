@@ -1,7 +1,5 @@
 package com.mrcd.custom.view.provider
 
-import com.mrcd.custom.view.provider.ContextHolder
-
 fun screenWidth(): Int {
     val context = ContextHolder.getContext()
     return context.resources.displayMetrics.widthPixels
